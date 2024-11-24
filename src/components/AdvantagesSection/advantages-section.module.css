@@ -1,0 +1,170 @@
+.AdvantagesSection{
+  background-image: url(src/assets/img/woman_aqua_track/woman_aqua_track_mob_1x.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f0eff4;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 353px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 14px 19px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.29;
+  letter-spacing: 0.01em;
+  color: #323F47;
+  position: absolute;
+  bottom: 96px;
+  left: 16px;
+}
+
+.imageContainer {
+  display: flex;
+  position: relative;
+
+}
+.image{
+  width: 26.4px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+
+}
+
+.image:nth-child(1) {
+  z-index: 3;
+  margin-left: 0;
+}
+
+.image:nth-child(2) {
+  z-index: 2;
+  margin-left: -10px;
+
+}
+
+.image:nth-child(3) {
+  z-index: 1;
+  margin-left: -10px;
+
+}
+
+.textCustomers{
+  color: #323F47;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0;
+    width: 67px;
+}
+
+.accent{
+  color: #9BE1A0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0;
+}
+
+.buttonsBenefits{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 168px;
+  position: absolute;
+  bottom: 32px;
+  right: 16px;
+}
+
+.buttonHabitDrive {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-color: #323F47;
+  padding: 9px 12px;
+  border-radius: 30px;
+
+
+}
+
+.habitDrive{
+
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #fff;
+  text-align: center;
+
+}
+
+.icon{
+  width:8px;
+  height: 8px;
+  color: #9BE1A0;
+}
+
+.buttonViewStatistics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9BE1A0;
+  padding: 9px 12px;
+  border-radius: 30px;
+
+}
+
+.viewStatistics{
+
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #323F47;
+  text-align: center;
+
+}
+
+.buttonPersonalRateSetting{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 9px 12px;
+  border-radius: 30px;
+}
+
+.personalRateSetting{
+
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #323F47;
+  text-align: center;
+}

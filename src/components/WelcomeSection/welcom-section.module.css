@@ -1,11 +1,97 @@
 .WelcomeSection {
+
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--light-gray);
+  background-color: #f0eff4;
+  border-radius: 30px;
+  padding: 24px 16px 67px 16px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  text-align: left;
 }
+
+.logo {
+  align-self: flex-start;
+
+  margin-bottom: 74px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-self: flex-start;
+
+
+
+}
+
+.textWrapper {
+  text-align: left;
+
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-self: flex-start;
+}
+
+.subtitle {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.06em;
+  color: #2f2f2f;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  color: #2f2f2f;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.tryTracker{
+  background-color: #9BE1A0;
+  padding: 14px 19px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.29;
+  letter-spacing: 0.01em;
+  color: #323F47;
+
+
+}
+
+.signIn{
+  border: #323F47 1px solid;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.29;
+  letter-spacing: 0.01em;
+  color: #323F47;
+
+}
+
