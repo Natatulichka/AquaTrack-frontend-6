@@ -1,0 +1,17 @@
+.addWaterBtn {
+  position: absolute;
+  right: 16px;
+  bottom: 32px;
+  border-radius: 30px;
+  padding: 14px 20px;
+  width: 140px;
+  height: 46px;
+  background-color: #323f47;
+  color: #fff;
+  cursor: pointer;
+}
+
+.addWaterBtn:focus,
+.addWaterBtn:hover {
+  color: #9be1a0;
+}

@@ -1,0 +1,10 @@
+.waterMainInfo {
+  margin: 0 auto;
+  position: relative;
+  background-color: #9be1a0;
+  max-width: 343px;
+  height: 415px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 24px 16px;
+}

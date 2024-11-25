@@ -1,0 +1,70 @@
+.progressBarWrapper {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.progressBar {
+  width: 198px;
+  height: 78px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 12px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.progressBarText {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  color: #323f47;
+  margin-bottom: 16px;
+}
+
+.progressLine {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.percentOfDrinkingWater {
+  position: absolute;
+  top: -15px;
+  left: 1px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.8;
+  color: #9be1a0;
+}
+
+.progressBarPercentageWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progressBarPercentage {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+  color: #bcbcbc;
+  width: 26px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.progressBarBackground {
+  display: block;
+  position: absolute;
+  height: 8px;
+  background-color: #f0eff4;
+  border-radius: 10px;
+  width: 100%;
+}

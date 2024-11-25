@@ -1,0 +1,28 @@
+.dayliNorma {
+  position: absolute;
+  top: 122px;
+  left: 16px;
+  font-family: 'Poppins', sans-serif;
+  width: 102px;
+  height: 54px;
+  border-radius: 15px;
+  background-color: #f0eff4;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.dayliNormaLiters {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  color: #323f47;
+  margin-bottom: 6px;
+}
+
+.dayliNormaText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  line-height: 1;
+  color: #bcbcbc;
+}

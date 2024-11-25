@@ -1,0 +1,7 @@
+.bottleForWater {
+  width: 100%;
+  height: 100%;
+  background-image: url('src/assets/img/bottles/bottle_for_water_mob_1x.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+}
