@@ -1,7 +1,4 @@
 .WelcomeSection {
-
-  /* padding-top: 60px;
-  padding-bottom: 60px; */
   background-color: #f0eff4;
   border-radius: 30px;
   padding: 24px 16px 67px 16px;
@@ -12,7 +9,6 @@
   flex-direction: column;
   align-items: stretch;
   width: 100%;
-  /* max-width: 375px; */
   height: 100%;
   margin: 0 auto;
   text-align: left;
@@ -69,7 +65,7 @@
 .button {
   display: flex;
   justify-content: center;
-  /* gap: 16px; */
+
 }
 
 .tryTracker{

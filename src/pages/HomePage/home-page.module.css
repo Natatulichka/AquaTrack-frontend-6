@@ -1,24 +1,20 @@
 .sectionsContainer {
   display: flex;
   flex-direction: column;
-  /* За замовчуванням секції одна під одною */
   gap: 16px;
-  /* Проміжок між секціями */
-  /* padding: 20px; */
+
 }
 
 @media screen and (min-width: 1440px) {
   .sectionsContainer {
     flex-direction: row;
-    /* Горизонтальне розташування секцій */
     justify-content: space-between;
-    /* Вирівнювання секцій із проміжком між ними */
     gap: 32px;
     padding: 32px;
   }
 
   .sectionsContainer>* {
     width: 50%;
-    /* Кожна секція займає 48% ширини контейнера */
+
   }
 }

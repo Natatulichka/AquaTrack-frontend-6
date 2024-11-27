@@ -1,10 +1,10 @@
 import Logo from "../../components/Logo/logo.jsx";
 import styles from "../../components/WelcomeSection/welcom-section.module.css";
-
+import clsx from "clsx";
 const WelcomeSection = () => {
   return (
     <section className={styles.WelcomeSection}>
-      <div className={styles.container}>
+      <div className={clsx("container", styles.container)}>
         <Logo className={styles.logo} />
         <div className={styles.content}>
           <div className={styles.textWrapper}>
