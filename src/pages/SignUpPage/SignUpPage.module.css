@@ -1,0 +1,14 @@
+.advantageContainer {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .signUpContainer {
+    display: flex;
+    column-gap: 32px;
+  }
+
+  .advantageContainer {
+    display: block;
+  }
+}

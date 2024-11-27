@@ -2,23 +2,23 @@ import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 import css from './SignUpForm.module.css';
-
 import { Input } from 'antd';
 import Logo from 'components/Logo/logo';
-
-const validationSchema = Yup.object().shape({
-  email: Yup.string()
-    .required('Email is required')
-    .email('Please enter a valid email'),
-  password: Yup.string()
-    .required('Password is required')
-    .min(6, 'Password must be at least 6 characters'),
-  repeatPassword: Yup.string()
-    .required('Please repeat your password')
-    .oneOf([Yup.ref('password')], 'Passwords do not match'),
-});
+import { useTranslation } from 'react-i18next';
 
 const SignUpForm = () => {
+  const { t } = useTranslation();
+  const validationSchema = Yup.object().shape({
+    email: Yup.string()
+      .required(t('validation.requiredEmail'))
+      .email(t('validation.validEmail')),
+    password: Yup.string()
+      .required(t('validation.requiredPassword'))
+      .min(6, t('validation.passwordMessage')),
+    repeatPassword: Yup.string()
+      .required(t('validation.repeatPasswordMessage'))
+      .oneOf([Yup.ref('password')], t('validation.oneOf')),
+  });
   const {
     handleSubmit,
     control,
@@ -36,15 +36,14 @@ const SignUpForm = () => {
   const onSubmit = data => {
     console.log(data);
   };
-
   return (
     <>
       <div className={css.backgroundContainer}>
         <Logo></Logo>
         <form className={css.formContainer} onSubmit={handleSubmit(onSubmit)}>
-          <h2 className={css.formTitle}>Sign Up</h2>
+          <h2 className={css.formTitle}>{t('signUp.title')}</h2>
 
-          <label className={css.label}>Email</label>
+          <label className={css.label}>{t('signUp.email')}</label>
           <Controller
             name="email"
             control={control}
@@ -53,7 +52,7 @@ const SignUpForm = () => {
                 {...field}
                 className={css.input}
                 type="text"
-                placeholder="Enter your email"
+                placeholder={t('signUp.placeholderEmail')}
                 variant="borderless"
                 autoComplete="off"
               />
@@ -61,7 +60,7 @@ const SignUpForm = () => {
           />
           {errors.email && <p className={css.error}>{errors.email.message}</p>}
 
-          <label className={css.label}>Password</label>
+          <label className={css.label}>{t('signUp.password')}</label>
           <Controller
             name="password"
             control={control}
@@ -70,7 +69,7 @@ const SignUpForm = () => {
                 {...field}
                 className={css.input}
                 type="password"
-                placeholder="Enter your password"
+                placeholder={t('signUp.placeholderPassword')}
                 variant="borderless"
               />
             )}
@@ -79,7 +78,9 @@ const SignUpForm = () => {
             <p className={css.error}>{errors.password.message}</p>
           )}
 
-          <label className={css.label}>Repeat password</label>
+          <label className={css.label}>
+            {t('signUp.placeholderRepeatPassword')}
+          </label>
           <Controller
             name="repeatPassword"
             control={control}
@@ -88,7 +89,7 @@ const SignUpForm = () => {
                 {...field}
                 className={`${css.input} ${css.lastInput}`}
                 type="password"
-                placeholder="Repeat your password"
+                placeholder={t('signUp.placeholderRepeatPassword')}
                 variant="borderless"
               />
             )}
@@ -100,14 +101,14 @@ const SignUpForm = () => {
           )}
 
           <button type="submit" className={css.btn}>
-            Sign Up
+            {t('signUp.title')}
           </button>
 
           <div className={css.linkContainer}>
             <p className={css.text}>
-              Already have account?
+              {t('signUp.account')}
               <a className={css.link} href="#">
-                Sign In
+                {t('signUp.signIn')}
               </a>
             </p>
           </div>

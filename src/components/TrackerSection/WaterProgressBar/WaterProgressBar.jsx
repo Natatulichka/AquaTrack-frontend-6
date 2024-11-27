@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import {
   StyledPercentOfDrinkingWater,
   StyledProgressBarSpan,
@@ -7,12 +8,13 @@ import css from './WaterProgressBar.module.css';
 import clsx from 'clsx';
 
 const WaterProgressBar = () => {
+  const { t } = useTranslation();
   const percentOfDrinkingWater = 50;
 
   return (
     <div className={css.progressBarWrapper}>
       <div className={css.progressBar}>
-        <p className={css.progressBarText}>Today</p>
+        <p className={css.progressBarText}>{t('chooseDate.today')}</p>
         <div className={css.progressLine}>
           <span className={css.progressBarBackground}></span>
 

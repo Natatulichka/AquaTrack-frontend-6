@@ -1,4 +1,5 @@
 .WelcomeSection {
+
   background-color: #f0eff4;
   border-radius: 30px;
   padding: 24px 16px 67px 16px;
@@ -13,26 +14,32 @@
   margin: 0 auto;
   text-align: left;
 }
-
-.logo {
-  align-self: flex-start;
-
+.logoLanguageWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 0;
   margin-bottom: 74px;
 }
 
-.content{
+.logo {
+  align-self: flex-start;
+  margin-bottom: 74px;
+}
+.lang {
+  position: absolute;
+  align-self: flex-end;
+}
+.content {
   display: flex;
   flex-direction: column;
   gap: 32px;
   align-self: flex-start;
-
-
-
 }
 
 .textWrapper {
   text-align: left;
-
 }
 
 .links {
@@ -50,7 +57,7 @@
   letter-spacing: 0.06em;
   color: #2f2f2f;
   margin-bottom: 16px;
-  color: #323F47;
+  color: #323f47;
 }
 
 .title {
@@ -59,7 +66,7 @@
   font-size: 38px;
   line-height: 1;
   letter-spacing: 0.06em;
-  color: #323F47;
+  color: #323f47;
 }
 
 .button {
@@ -68,8 +75,8 @@
 
 }
 
-.tryTracker{
-  background-color: #9BE1A0;
+.tryTracker {
+  background-color: #9be1a0;
   padding: 14px 19px;
   border-radius: 30px;
   font-family: 'Poppins';
@@ -77,13 +84,11 @@
   font-weight: 700;
   line-height: 1.29;
   letter-spacing: -0.01em;
-  color: #323F47;
-
-
+  color: #323f47;
 }
 
-.signIn{
-  border: #323F47 1px solid;
+.signIn {
+  border: #323f47 1px solid;
   padding: 14px 28px;
   border-radius: 30px;
   font-family: 'Poppins';
@@ -91,63 +96,52 @@
   font-weight: 700;
   line-height: 1.29;
   letter-spacing: -0.01em;
-  color: #323F47;
-
+  color: #323f47;
 }
 
 @media screen and (min-width: 768px) {
   .WelcomeSection {
     padding: 32px 32px 50px 32px;
-    /* height: 498px; */
 
+  }
+  .logo {
+    margin-bottom: 50px;
+  }
+
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 64px;
+  }
+
+  .tryTracker {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 18px 40px;
+  }
+
+  .signIn {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 18px 40px;
+  }
 }
-.logo {
-
-
-  margin-bottom: 50px;
-}
-
-.subtitle{
-
-  font-size: 16px;
-
-}
-
-.title{
-  font-size: 64px;
-}
-
-.tryTracker{
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 18px 40px;
-}
-
-.signIn{
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 18px 40px;
-}
-
-}
-
 
 @media screen and (min-width: 1440px) {
   .WelcomeSection {
     padding: 32px 32px 188px 32px;
-    flex: 1;
+
+
   }
 
   .logo {
-
-
     margin-bottom: 132px;
   }
 
-    .title {
-      font-weight: 900;
-    }
-
-
-
+  .title {
+    font-weight: 900;
+  }
 }

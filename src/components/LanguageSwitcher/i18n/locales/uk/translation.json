@@ -1,0 +1,219 @@
+{
+  "lang": {
+    "choose": "Виберіть Мову",
+    "select": "Виберіть Мову",
+    "language": "Українська"
+  },
+
+  "pages": {
+    "home": "Трекер води",
+    "notFound": "Сторінку не знайдено",
+    "signIn": "Вхід",
+    "signUp": "Реєстрація",
+    "tracker": "Твій трекер води",
+    "forgot": "Відновлення пароля",
+    "renew": "Оновлення пароля",
+    "error": "Помилка",
+    "resetPwd": "Скинути пароль"
+  },
+
+  "logo": {
+    "logo": "Акватрек"
+  },
+
+  "homepage": {
+    "welcome": {
+      "text": "Записуйте щоденне споживання води та відстежуйте",
+      "title": "Трекер споживання води",
+      "tryBtn": "Спробувати",
+      "signInBtn": "Увійти"
+    },
+
+    "advantages": {
+      "customers": "Наші {{counter}} щасливі клієнти",
+      "habitDrive": "Сприяння звичкам",
+      "viewStatistic": "Переглянути статистику",
+      "personalSetting": "Налаштування особистого рейтингу"
+    }
+  },
+
+  "signIn": {
+    "title": "Вхід",
+    "account": "Не маєте акаунту?",
+    "signUp": "Реєстрація",
+    "email": "Електронна пошта",
+    "placeholderEmail": "Введіть електронну пошту",
+    "password": "Пароль",
+    "placeholderPassword": "Введіть пароль",
+    "forgotPassword": "Забули ваш пароль?",
+    "googleBtn": "Вхід з акаунтом"
+  },
+
+  "signUp": {
+    "title": "Зареєструватися",
+    "email": "Електронна пошта",
+    "placeholderEmail": "Введіть Вашу електронну пошту",
+    "password": "Пароль",
+    "placeholderPassword": "Введіть Ваш пароль",
+    "account": "Вже маєте обліковий запис?",
+    "signIn": "Увійти",
+    "placeholderRepeatPassword": "Повторіть Ваш пароль"
+  },
+
+  "validation": {
+    "requiredEmail": "Електронна пошта є обов'язковою",
+    "validEmail": "Будь ласка, введіть дійсну електронну пошту",
+    "requiredPassword": "Пароль є обов'язковим",
+    "passwordMessage": "Пароль має бути не менше 6 символів",
+    "repeatPasswordMessage": "Будь ласка, повторіть Ваш пароль",
+    "oneOf": "Паролі не співпадають"
+  },
+
+  "notFound": {
+    "title": "Ой!",
+    "info": "Схоже, ця сторінка недоступна.",
+    "advice": "Давайте повернемо вас на правильний шлях!",
+    "goBack": "Перейти на головну"
+  },
+
+  "chooseDate": {
+    "today": "Сьогодні",
+    "noWaterConsumed": "В цей день не було спожито води.",
+    "edit": "Редагувати запис про воду",
+    "delete": "Видалити запис про воду",
+
+    "ml": "мл",
+    "l": "Л"
+  },
+
+  "waterForm": {
+    "titleEdit": "Виправити введені дані",
+    "titleAdd": "Виберіть значення",
+    "secondTitle": "Кількість води",
+    "time": "Час запису",
+    "waterUsed": "Введіть кількість використаної води",
+    "button": "Зберігти"
+  },
+
+  "waterModal": {
+    "edit": "Редагувати введену кількість води",
+    "add": "Додати воду"
+  },
+
+  "settingsModal": {
+    "titleModal": "Налаштування"
+  },
+
+  "deleteModal": {
+    "title": "Видалити запис",
+    "confirm": "Ви впевнені, що хочете видалити запис?",
+    "delete": "Видалити",
+    "ariaDelete": "Підтвердити видалення",
+    "close": "Скасувати",
+    "ariaClose": "Скасувати видалення"
+  },
+
+  "logOutModal": {
+    "title": "Вихід",
+    "confirm": "Ви дійсно хочете вийти?",
+    "logOut": "Вийти",
+    "ariaLogOut": "Підтвердити вихід",
+    "close": "Скасувати",
+    "ariaClose": "Скасувати вихід"
+  },
+
+  "settingsForm": {
+    "userPhotoAlt": "Фото користувача",
+    "userUploadButton": "Завантажити фото",
+    "userGender": "Ваша гендерна ідентичність",
+    "genderWoman": "Жінка",
+    "genderMan": "Чоловік",
+    "userNameLabel": "Ваше ім'я",
+    "userNamePlaceholder": "ім'я користувача",
+    "userEmailLabel": "Електронна пошта",
+    "subtitle": "Моя денна норма",
+    "textForWoman": "Для жінки:",
+    "textForMan": "Для чоловіка:",
+    "textDescription": "V - об'єм норми води в літрах на добу, M - маса вашого тіла, T - час активних занять спортом, або іншим видом діяльності, співмірним за навантаженнями (за їх відсутності ви необхідно встановити 0)",
+    "textActiveTime": "Час активності в годинах",
+    "userWeight": "Ваша вага в кілограмах:",
+    "userTime": "Час активного заняття спортом (год):",
+    "WaterAmount": " Необхідна кількість води в літрах на добу:",
+    "labelWaterNorma": "Запишіть, скільки води ви будете пити (мл):",
+    "subButton": "Зберегти",
+    "ValidationGender": "Виберіть стать",
+    "ValidationNameMin": "Мінімальна кількість символів – 3",
+    "ValidationNameMax": "Максимальна кількість символів – 50",
+    "ValidationNameRequired": "Необхідно вказати ім'я",
+    "ValidationEmail": "Недійсний формат електронної пошти",
+    "ValidationEmailRequired": "Необхідно вказати адресу електронної пошти",
+    "ValidationWeightTypeError": "Необхідно вказати вагу у числовому значені",
+    "ValidationWeightMin": "Вага має бути більше 0",
+    "ValidationWeightRequired": "Необхідно вказати вагу",
+    "ValidationTimeTypeError": "Необхідно вказати активний час у числовому значені",
+    "ValidationTimeMin": "Активний час має бути більше ніж 0",
+    "ValidationTimeRequired": "Необхідно вказати актиний час",
+    "ValidationDailyRequirementTypeError": "Необхідно вказати добову норму води у числовому значені",
+    "ValidationDailyRequirementMin": "Добова норма води має бути більше 0",
+    "ValidationDailyRequirementRequired": "Необхідно вказати добову норму води"
+  },
+
+  "resetPwd": {
+    "title": "Скинути пароль",
+    "email": "Електронна пошта",
+    "placeholderEmail": "Введіть електронну пошту",
+    "password": "Пароль",
+    "placeholderPassword": "Введіть пароль",
+    "placeholderRepeatPassword": "Повторіть пароль"
+  },
+
+  "waterDailyNorma": {
+    "liters": "Л",
+    "dailyNorma": "Щоденна норма"
+  },
+
+  "addWaterBtn": {
+    "addWater": "Додати води"
+  },
+
+  "userPanel": {
+    "greeting": "Привіт"
+  },
+
+  "userBarPopover": {
+    "setting": "Налаштування",
+    "logout": "Вийти"
+  },
+
+  "calendar": {
+    "statistics": "Статистика",
+    "month": "Місяць",
+    "previousMonth": "попередній місяць",
+    "nextMonth": "наступний місяць",
+    "hideChart": "приховати діаграму",
+    "showChart": "показати діаграму"
+  },
+
+  "months": {
+    "January": "Січень",
+    "February": "Лютий",
+    "March": "Березень",
+    "April": "Квітень",
+    "May": "Травень",
+    "June": "Червень",
+    "July": "Липень",
+    "August": "Серпень",
+    "September": "Вересень",
+    "October": "Жовтень",
+    "November": "Листопад",
+    "December": "Грудень"
+  },
+  "validationForm": {
+    "drinkingTimeRequired": "Час запису є обов’язковим",
+    "usedWaterRequired": "Водне значення є обов’язковим!",
+    "usedWaterTypeError": "Значення має бути числом",
+    "usedWaterPositive": "Значення має бути більше за 0",
+    "usedWaterInteger": "Значення має бути цілим числом",
+    "usedWaterMax": "Значення не повинно перевищувати 9999"
+  }
+}

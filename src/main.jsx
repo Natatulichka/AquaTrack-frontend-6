@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
-import './assets/styles/reset.css';
-
+import './assets/styles/styles.css';
+import './components/LanguageSwitcher/i18n/i18n.js';
 
 // import { Provider } from 'react-redux';
 // import { persistor, store } from './redux/store.js';

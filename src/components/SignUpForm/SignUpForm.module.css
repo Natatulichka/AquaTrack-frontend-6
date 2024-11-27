@@ -2,7 +2,6 @@
   padding: 24px 16px 24px 16px;
   background-color: rgba(240, 239, 244, 1);
   border-radius: 30px;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,7 +119,7 @@
   .formContainer {
     margin-left: auto;
     margin-right: auto;
-    padding: 32px;
+    /* padding: 32px; */
   }
 
   .formTitle {
@@ -147,5 +146,11 @@
 
   .text {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .backgroundContainer {
+    width: 672px;
   }
 }

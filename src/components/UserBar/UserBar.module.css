@@ -1,13 +1,12 @@
 @media screen and (max-width: 767px) {
     .user_button_container {
         position: relative;
-        /* display: inline-block; */
 
         border-radius: 30px;
-        width: 343px;
+        max-width: 343px;
         height: 770px;
         background: #f0eff4;
-        /* margin: 16px 16px; */
+        margin: 0 auto;
     }
 
     .user_button {
@@ -65,22 +64,11 @@
 
         box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.1);
 
-        /* right: 1px; */
-
         background-color: #fff;
         color: #323f47;
         z-index: 10;
     }
 
-    /* .popover::before {
-        content: '';
-        position: absolute;
-        top: -8px;
-        left: 20px;
-        border-width: 0 8px 8px 8px;
-        border-style: none;
-        border-color: transparent transparent #fff transparent;
-    } */
 
     .inPopover {
         display: flex;

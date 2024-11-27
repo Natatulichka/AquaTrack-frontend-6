@@ -10,15 +10,17 @@ const TrackerPage = lazy(() => import('./pages/TrackerPage/TrackerPage'));
 
 function App() {
   return (
-    <SharedLayout>
+    <>
       <Toaster position="top-center" reverseOrder={false} />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/signup" element={<SignUpPage />} />
-        <Route path="/signin" element={<SignInPage />} />
-        <Route path="/tracker" element={<TrackerPage />} />
-      </Routes>
-    </SharedLayout>
+      <SharedLayout>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/signin" element={<SignInPage />} />
+          <Route path="/tracker" element={<TrackerPage />} />
+        </Routes>
+      </SharedLayout>
+    </>
   );
 }
 
