@@ -245,6 +245,7 @@ background-image: url(src/assets/img/woman_aqua_track/woman_aqua_track_tablet_1x
 
   .AdvantagesSection{
     background-image: url(src/assets/img/woman_aqua_track/woman_aqua_track_desktop_1x.webp);
+    flex: 1;
   }
 
   .container{

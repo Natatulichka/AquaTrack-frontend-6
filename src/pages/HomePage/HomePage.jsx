@@ -4,8 +4,8 @@ import styles from "./home-page.module.css";
 function HomePage() {
   return (
     <div className={styles.sectionsContainer}>
-      <WelcomeSection />
-      <AdvantagesSection />
+      <WelcomeSection  className={styles.welcomeSection}/>
+      <AdvantagesSection className={styles.advantagesSection} />
     </div>
   );
 }
