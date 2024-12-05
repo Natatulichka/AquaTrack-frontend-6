@@ -45,7 +45,12 @@ function App() {
                 />
               }
             />
-            <Route path="/tracker" element={<TrackerPage />} />
+            <Route
+              path="/tracker"
+              element={
+                <PrivateRoute redirectTo="/login" component={<TrackerPage />} />
+              }
+            />
           </Routes>
         </Suspense>
       </SharedLayout>
