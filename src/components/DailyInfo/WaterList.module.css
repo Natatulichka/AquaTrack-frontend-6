@@ -14,8 +14,7 @@
   display: flex;
   max-width: 311px;
   height: 118px;
-  scrollbar-color:#323F47 #FFFFFF;
-  scrollbar-gutter: stable both-edges;
+  /* scrollbar-gutter: stable both-edges; */
  }
 
  .waterItem {
@@ -85,7 +84,7 @@
    }
 
    .waterItem {
-    width: 192px;
+    min-width: 192px;
     height: 86px;
     padding: 20px;
     gap: 20px;
@@ -127,4 +126,22 @@
 
 .waterDelete:hover {
   color: #dc3545;
+}
+
+.waterList::-webkit-scrollbar {
+  width: 150px; /* Ширина вертикального скроллбара */
+  height: 8px; /* Высота горизонтального скроллбара */
+}
+.waterList::-webkit-scrollbar-thumb {
+  background-color: #323f47; /* Цвет ползунка */
+  opacity: 0.52;
+  border-radius: 8px; /* Скругление углов */
+  border: none /* Обводка вокруг ползунка */
+}
+.waterList::-webkit-scrollbar-track {
+  background-color: #fff; /* Цвет фона */
+  border-radius: 8px;
+}
+.waterList::-webkit-scrollbar-thumb:hover {
+  background-color: #2f2f2f;
 }
