@@ -38,7 +38,7 @@
     left: 134px;
     right: 134px;
   }
-}
+} */
 
 .formTitle {
   margin: 0;
@@ -49,7 +49,7 @@
   line-height: 1;
   letter-spacing: -0.01em;
   color: #323f47;
-} */
+}
 
 .label {
   font-family: 'Poppins', sans-serif;
@@ -176,6 +176,6 @@
 @media (min-width: 1440px) {
   .backgroundContainer {
     width: 672px;
-    max-height: 736px;
+    height: 736px;
   }
 }
