@@ -26,7 +26,6 @@ export const waterSlice = createSlice({
       .addCase(getWaterByDay.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-
         if (action.payload.isToday) {
           state.dailyWater = action.payload.waterList;
           state.choosenDailyWater = action.payload.waterList;
@@ -35,7 +34,6 @@ export const waterSlice = createSlice({
         }
       })
       .addCase(getWaterByDay.rejected, (state, action) => {
-        state.dailyWater = [];
         state.choosenDailyWater = [];
         state.isLoading = false;
         state.error = action.payload;
@@ -59,8 +57,9 @@ export const waterSlice = createSlice({
       .addCase(addWater.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        state.dailyWater.push(action.payload);
-        state.monthWater.push(action.payload);
+        state.dailyWater.push(action.payload.addedWater);
+        state.choosenDailyWater.push(action.payload.addedWater);
+        state.monthWater.push(action.payload.addedWater);
       })
       .addCase(addWater.rejected, (state, action) => {
         state.isLoading = false;
@@ -74,10 +73,13 @@ export const waterSlice = createSlice({
       .addCase(updateWater.fulfilled, (state, action) => {
         state.isLoading = false;
         state.monthWater = state.monthWater.map(water =>
-          water.id === action.payload.id ? action.payload : water
+          water.id === action.payload.id ? action.payload.responseWater : water
         );
         state.dailyWater = state.dailyWater.map(water =>
-          water.id === action.payload.id ? action.payload : water
+          water.id === action.payload.id ? action.payload.responseWater : water
+        );
+        state.choosenDailyWater = state.choosenDailyWater.map(water =>
+          water.id === action.payload.id ? action.payload.responseWater : water
         );
       })
       .addCase(updateWater.rejected, (state, action) => {
@@ -94,6 +96,9 @@ export const waterSlice = createSlice({
           water => water.id !== action.payload
         );
         state.dailyWater = state.dailyWater.filter(
+          water => water.id !== action.payload
+        );
+        state.choosenDailyWater = state.choosenDailyWater.filter(
           water => water.id !== action.payload
         );
       })

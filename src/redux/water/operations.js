@@ -1,6 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { instance } from '../auth/operations';
 import { checkIsToday } from '../../utils/getDateNow';
+import { selectChoosenDay } from '../common/selectors';
 
 export const getWaterByDay = createAsyncThunk(
   'water/getWaterByDay',
@@ -57,7 +58,10 @@ export const addWater = createAsyncThunk(
   async (water, thunkAPI) => {
     try {
       const { data } = await instance.post('/api/water', water);
-      return data.data;
+      const isToday = checkIsToday(new Date());
+
+      const addedWater = data.data;
+      return { addedWater, isToday };
     } catch (error) {
       if (error.response) {
         const status = error.response.data.status;
@@ -82,7 +86,14 @@ export const updateWater = createAsyncThunk(
         ...updatedWater,
       });
 
-      return data.data;
+      const isToday = checkIsToday();
+      console.log(selectChoosenDay);
+
+      console.log(isToday);
+
+      const responseWater = data.data;
+
+      return { responseWater, isToday };
     } catch (error) {
       if (error.response) {
         const status = error.response.data.status;
