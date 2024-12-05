@@ -176,6 +176,6 @@
 @media (min-width: 1440px) {
   .backgroundContainer {
     width: 672px;
-    max-height: 736px;
+    height: 736px;
   }
 }
