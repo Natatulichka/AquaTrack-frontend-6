@@ -29,18 +29,18 @@ const AdvantagesSection = () => {
               <div className={styles.imageContainer}>
                 <picture className={styles.image}>
                   <source
-                    srcSet="src/assets/img/customers/customer_1_tab_desk_1x.webp 1x,
-                            src/assets/img/customers/customer_1_tab_desk_2x.webp 2x"
+                    srcSet="/img/customers/customer_1_tab_desk_1x.webp 1x,
+                            /img/customers/customer_1_tab_desk_2x.webp 2x"
                     media="(min-width: 768px)"
                   />
                   <source
-                    srcSet="src/assets/img/customers/customer_1_mob_1x.webp 1x,
-                            src/assets/img/customers/customer_1_mob_2x.webp 2x"
+                    srcSet="/img/customers/customer_1_mob_1x.webp 1x,
+                            /img/customers/customer_1_mob_2x.webp 2x"
                     media="(max-width: 768px)"
                   />
 
                   <img
-                    src="src/assets/img/customers/customer_1_mob_1x.webp"
+                    src="/img/customers/customer_1_mob_1x.webp"
                     alt="Customer 1"
                   />
                 </picture>
