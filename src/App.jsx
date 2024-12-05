@@ -49,7 +49,10 @@ function App() {
             <Route
               path="/tracker"
               element={
-                <PrivateRoute redirectTo="/login" component={<TrackerPage />} />
+                <PrivateRoute
+                  redirectTo="/signin"
+                  component={<TrackerPage />}
+                />
               }
             />
           </Routes>
