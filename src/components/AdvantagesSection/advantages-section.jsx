@@ -47,34 +47,34 @@ const AdvantagesSection = () => {
 
                 <picture className={styles.image}>
                   <source
-                    srcSet="src/assets/img/customers/customer_2_tab_desk_1x.webp 1x,
-                            src/assets/img/customers/customer_2_tab_desk_2x.webp 2x"
+                    srcSet="/img/customers/customer_2_tab_desk_1x.webp 1x,
+                            /img/customers/customer_2_tab_desk_2x.webp 2x"
                     media="(min-width: 768px)"
                   />
                   <source
-                    srcSet="src/assets/img/customers/customer_2_mob_1x.webp 1x,
-                            src/assets/img/customers/customer_2_mob_2x.webp 2x"
+                    srcSet="/img/customers/customer_2_mob_1x.webp 1x,
+                            /img/customers/customer_2_mob_2x.webp 2x"
                     media="(max-width: 768px)"
                   />
                   <img
-                    src="src/assets/img/customers/customer_2_mob_1x.webp"
+                    src="/img/customers/customer_2_mob_1x.webp"
                     alt="Customer 2"
                   />
                 </picture>
 
                 <picture className={styles.image}>
                   <source
-                    srcSet="src/assets/img/customers/customer_3_tab_desk_1x.webp 1x,
-                           src/assets/img/customers/customer_3_tab_desk_2x.webp 2x"
+                    srcSet="/img/customers/customer_3_tab_desk_1x.webp 1x,
+                           /img/customers/customer_3_tab_desk_2x.webp 2x"
                     media="(min-width: 768px)"
                   />
                   <source
-                    srcSet="src/assets/img/customers/customer_3_mob_1x.webp 1x,
-                            src/assets/img/customers/customer_3_mob_2x.webp 2x"
+                    srcSet="/img/customers/customer_3_mob_1x.webp 1x,
+                            /img/customers/customer_3_mob_2x.webp 2x"
                     media="(max-width: 768px)"
                   />
                   <img
-                    src="src/assets/img/customers/customer_3_mob_1x.webp"
+                    src="/img/customers/customer_3_mob_1x.webp"
                     alt="Customer 3"
                   />
                 </picture>
