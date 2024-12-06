@@ -11,7 +11,7 @@ import {
 const INITIAL_STATE = {
   accessToken: null,
   refreshToken: null,
-  isLoggedIn: false,
+  isLoggedIn: JSON.parse(localStorage.getItem('isLoggedIn')) || false,
   isRefreshing: false,
   isResetPasswordEmailSend: false,
   isResetPasswordSuccess: false,
@@ -50,15 +50,15 @@ export const authSlice = createSlice({
       })
       .addCase(login.rejected, (state, action) => {
         state.error = action.payload;
+        state.isLoggedIn = false;
       })
 
       .addCase(refreshUser.pending, state => {
         state.error = null;
         state.isRefreshing = true;
       })
-      .addCase(refreshUser.fulfilled, (state, action) => {
+      .addCase(refreshUser.fulfilled, state => {
         state.isLoggedIn = true;
-        state.user = action.payload;
         state.isRefreshing = false;
       })
       .addCase(refreshUser.rejected, (state, action) => {

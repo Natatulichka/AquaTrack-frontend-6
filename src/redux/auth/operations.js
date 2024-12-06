@@ -55,11 +55,11 @@ instance.interceptors.response.use(
         localStorage.setItem('refreshToken', newRefreshToken);
 
         setAuthToken(accessToken);
-
         return instance(originalRequest);
       } catch (refreshError) {
         console.error('Token refresh failed:', refreshError);
 
+        localStorage.removeItem('isLoggedIn');
         localStorage.removeItem('accessToken');
         localStorage.removeItem('refreshToken');
 
@@ -79,6 +79,7 @@ export const register = createAsyncThunk(
       await instance.post('api/auth/register', formData);
 
       const { data } = await instance.post('api/auth/login', formData);
+      localStorage.setItem('isLoggedIn', JSON.stringify('true'));
 
       setAuthToken(data.data.accessToken);
 
@@ -107,6 +108,7 @@ export const login = createAsyncThunk(
   async (formData, thunkAPI) => {
     try {
       const { data } = await instance.post('api/auth/login', formData);
+      localStorage.setItem('isLoggedIn', JSON.stringify('true'));
 
       setAuthToken(data.data.accessToken);
 
@@ -135,13 +137,8 @@ export const refreshUser = createAsyncThunk(
   async (_, thunkAPI) => {
     try {
       const state = thunkAPI.getState();
-      const token = state.auth.token;
 
-      setAuthToken(token);
-
-      const { data } = await instance.post('api/auth/refresh');
-
-      return data;
+      return;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }
@@ -165,6 +162,7 @@ export const logout = createAsyncThunk('auth/logout', async (_, thunkAPI) => {
     await instance.post('api/auth/logout', { accessToken });
 
     setAuthToken('');
+    localStorage.removeItem('isLoggedIn');
     localStorage.removeItem('accessToken');
     localStorage.removeItem('refreshToken');
   } catch (error) {

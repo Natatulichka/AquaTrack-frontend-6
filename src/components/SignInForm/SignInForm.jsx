@@ -49,7 +49,6 @@ const SignInForm = () => {
       navigate('/tracker');
     }
 
-    console.log('Clearing error...');
     dispatch(clearError());
   }, [loggedIn, dispatch, clearError]);
 
