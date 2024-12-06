@@ -101,8 +101,8 @@ export const UserSettingsForm = ({ onSettingModalClose }) => {
   const activeTime = watch('activeTime') || 0;
 
   const calculateDailyWaterIntake = () => {
-    const weightFactor = gender === 'Woman' ? 0.03 : 0.04;
-    const activityFactor = gender === 'Woman' ? 0.4 : 0.6;
+    const weightFactor = gender === 'woman' ? 0.03 : 0.04;
+    const activityFactor = gender === 'woman' ? 0.4 : 0.6;
     return (weight * weightFactor + activeTime * activityFactor).toFixed(1);
   };
 
